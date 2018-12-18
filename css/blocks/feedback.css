@@ -1,0 +1,144 @@
+.feedback {
+    margin-bottom: 54px;
+    padding-top: 10px;
+}
+
+.feedback__content {
+    width: 765px;
+    background-color: rgb(245, 245,245);
+}
+
+
+.feedback__container {
+    padding: 47px 100px;
+}
+
+.feedback__container h2 {
+    font-size: 49px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.form {
+    margin-top: 24px;
+}
+
+
+.form__row  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__col  {
+    width: 270px;
+}
+
+.form__col--right  {
+    text-align: right;
+}
+
+.form__label  {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form__input {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form__radios {
+    display: flex;
+}
+
+.form__radio {
+    display: flex;
+    margin-right: 20px;
+}
+
+.form__radio-elem {
+    position: absolute;
+    left: -9999px;
+}
+
+.form__radio-fake {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(202, 202, 202);
+    margin-right: 5px;
+    position: relative;
+}
+
+.form__radio-fake::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgb(75, 115, 181);
+}
+
+  .form__radio-elem:checked + .form__radio-fake {
+    border-color: rgb(75, 115, 181);
+}
+  
+  .form__radio-elem:checked + .form__radio-fake::after {
+    width: 8px;
+    height: 8px;
+}
+  
+  .form__radio-elem:checked + .form__radio-fake + .form__radio-title {
+    color: rgb(75, 115, 181);
+}
+
+  .form__button {
+    padding: 19px 46px 16px 20px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(75, 115, 181);
+    cursor: pointer;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.form__button:before,
+.form__button:after {
+    width: 15px;
+    height: 14px;
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    background: url(../../img/spritesheet/spritesheet_button.png);
+    transition: .5s;
+}
+
+.form__button:before {
+    background-position: -30px -30px;
+}
+
+.form__button::after {
+    background-position: -105px -30px;
+}
+
+.form__button:hover::after {
+    opacity: 0;
+}
+
+.form__button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(75, 115, 181);
+}

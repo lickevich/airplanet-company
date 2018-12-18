@@ -1,0 +1,29 @@
+
+.pattern {
+    min-width: 276px;
+    margin-top: 22px;
+    margin-left: 1px;
+    padding-bottom: 5px;
+}
+
+.pattern__content {
+    background: url(../../img/pattern/pattern.png);
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.pattern__content a.application {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pattern__content a.phone {
+    color: white;
+    font-weight: bold;
+}
+

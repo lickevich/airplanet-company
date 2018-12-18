@@ -1,0 +1,79 @@
+.header {
+    background-color: rgb(75, 115, 181);
+    }
+    
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+    padding-left: 2px;
+    padding-bottom: 16px;
+    }
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__phone {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.contacts__desk {
+    color:  rgb(201, 213, 233);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: right;
+    position: relative;
+}
+
+.contacts__desk:hover {
+    color:  white;
+}
+
+.contacts__drop {
+    position: absolute;
+    top: 38px;
+    right: -999px;
+    text-decoration: none;
+    padding: 15px 22px 17px 20px;
+    border-radius: 3px;
+    text-align: left;
+    white-space: nowrap;
+    min-width: 160px;
+    background: white;
+    box-shadow: 0 0 10px 0 gray;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.contacts__desk:hover .contacts__drop {
+    opacity: 1;
+    right: 0;
+}
+
+.contacts__drop::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-bottom-color: white;
+    bottom: 99%;
+    right: 0%;
+}
+
+
+.contacts__drop__day {
+    margin-bottom: 5px;
+    color: rgb(75, 115, 181);
+}
+
+.contacts__drop__time {
+    color: black;
+    font-weight: 400;
+}

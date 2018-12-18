@@ -1,0 +1,101 @@
+.nav {
+    width: 473px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+  
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    align-items: center;
+}
+
+.nav__link {
+    padding-top: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(75, 115, 181);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s;
+}
+
+.nav__item:nth-child(2) {
+    margin-left: 94px;
+}
+.nav__item:nth-child(3) {
+    margin-left: 94px;
+}
+
+
+.nav__link--main {
+    padding-left: 34px;
+}
+.nav__link--com {
+    padding-left: 36px;
+}
+.nav__link--team {
+    padding-left: 38px;
+}
+
+.nav__link::before,
+.nav__link::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: url(../../img/spritesheet/spritesheet.png) no-repeat;
+    transition: .5s;
+}
+
+.nav__link--main::after {
+    width: 17px;
+    height: 18px;
+    background-position: -107px -108px;
+}
+
+.nav__link--com::after {
+    width: 20px;
+    height: 18px;
+    background-position: -184px -108px;
+}
+
+.nav__link--team::after {
+    width: 23px;
+    height: 18px;
+    background-position: -113px -30px;
+}
+
+.nav__link--main::before,
+.nav__link--active.nav__link--main::after {
+    width: 17px;
+    height: 18px;
+    background-position: -30px -108px;
+}
+
+.nav__link--com::before,
+.nav__link--active.nav__link--com::after {
+    width: 20px;
+    height: 18px;
+    background-position: -196px -30px;
+}
+
+.nav__link--team::before,
+.nav__link--active.nav__link--team::after {
+    width: 23px;
+    height: 18px;
+    background-position: -30px -30px;
+}
+
+.nav__link:hover::after {
+    opacity: 0;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    color: rgb(34, 31, 31);
+}

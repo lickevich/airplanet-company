@@ -1,0 +1,28 @@
+.footer {
+    margin: 0 auto;
+    display: flex; 
+    background-color: rgb(75, 115, 181);
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__author {
+    width: 240px;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.loftschool {
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.lickevich {
+    font-weight: bold;
+}
